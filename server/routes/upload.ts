@@ -6,9 +6,23 @@ import { requireAuth } from '../auth.ts';
 
 const router = Router();
 
-const uploadsDir = path.resolve(process.cwd(), 'data', 'uploads');
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+const isServerless = Boolean(
+  process.env.VERCEL ||
+  process.env.AWS_LAMBDA_FUNCTION_NAME ||
+  process.env.LAMBDA_TASK_ROOT ||
+  process.env.NOW_REGION
+);
+
+const uploadsDir = isServerless
+  ? path.resolve('/tmp', 'uploads')
+  : path.resolve(process.cwd(), 'data', 'uploads');
+
+try {
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch {
+  // Read-only filesystem fallback
 }
 
 const storage = multer.diskStorage({

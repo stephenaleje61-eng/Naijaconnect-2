@@ -7,6 +7,7 @@ class SocketClient {
   private listeners: Map<string, Set<SocketEventListener>> = new Map();
   private reconnectTimer: any = null;
   private isConnecting = false;
+  private reconnectAttempts = 0;
 
   connect() {
     if (this.ws && (this.ws.readyState === WebSocket.OPEN || this.ws.readyState === WebSocket.CONNECTING)) {
@@ -26,6 +27,7 @@ class SocketClient {
 
       this.ws.onopen = () => {
         this.isConnecting = false;
+        this.reconnectAttempts = 0;
         if (token) {
           this.send({ type: 'auth', token });
         }
@@ -63,9 +65,11 @@ class SocketClient {
 
   private scheduleReconnect() {
     if (this.reconnectTimer) clearTimeout(this.reconnectTimer);
+    this.reconnectAttempts = Math.min(this.reconnectAttempts + 1, 5);
+    const delay = Math.min(3000 * Math.pow(1.5, this.reconnectAttempts), 30000);
     this.reconnectTimer = setTimeout(() => {
       this.connect();
-    }, 3000);
+    }, delay);
   }
 
   disconnect() {

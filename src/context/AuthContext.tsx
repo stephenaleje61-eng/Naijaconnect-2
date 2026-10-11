@@ -10,7 +10,6 @@ interface AuthContextType {
   login: (identifier: string, password: string) => Promise<User>;
   register: (data: any) => Promise<User>;
   logout: () => void;
-  switchUser: (email: string) => Promise<void>;
   updateCurrentUser: (updated: Partial<User>) => void;
   refreshMe: () => Promise<void>;
   decrementUnreadNotifs: () => void;
@@ -89,22 +88,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setUnreadNotificationsCount(0);
   };
 
-  // Quick switch function between demo Nigerian accounts
-  const switchUser = async (email: string) => {
-    setLoading(true);
-    try {
-      const res = await api.login({ identifier: email, password: 'Password123!' });
-      setStoredToken(res.token);
-      setCurrentUser(res.user);
-      socketClient.disconnect();
-      socketClient.connect();
-    } catch (err: any) {
-      console.error('Error switching user:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const updateCurrentUser = (updated: Partial<User>) => {
     if (currentUser) {
       setCurrentUser({ ...currentUser, ...updated });
@@ -124,7 +107,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         login,
         register,
         logout,
-        switchUser,
         updateCurrentUser,
         refreshMe,
         decrementUnreadNotifs

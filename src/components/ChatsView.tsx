@@ -29,13 +29,15 @@ import { socketClient } from '../services/socket.ts';
 interface ChatsViewProps {
   initialTargetUserId?: string | null;
   onSelectUser: (userId: string) => void;
+  onOpenAuth?: () => void;
 }
 
 export const ChatsView: React.FC<ChatsViewProps> = ({
   initialTargetUserId,
-  onSelectUser
+  onSelectUser,
+  onOpenAuth
 }) => {
-  const { currentUser, switchUser } = useAuth();
+  const { currentUser } = useAuth();
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [activeConversation, setActiveConversation] = useState<Conversation | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -68,9 +70,6 @@ export const ChatsView: React.FC<ChatsViewProps> = ({
   const [showNewDirectChatModal, setShowNewDirectChatModal] = useState(false);
   const [allUsersList, setAllUsersList] = useState<User[]>([]);
   const [searchUserQuery, setSearchUserQuery] = useState('');
-
-  // Persona switcher menu
-  const [showPersonaMenu, setShowPersonaMenu] = useState(false);
 
   // Emoji picker toggle
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
@@ -433,14 +432,6 @@ export const ChatsView: React.FC<ChatsViewProps> = ({
 
   const popularEmojis = ['🇳🇬', '❤️', '😂', '🔥', '👍', '🙌', '🙏', '👏', '✨', '💯', '🍲', '😎'];
 
-  const demoAccounts = [
-    { name: 'Chidiebere Eze', state: 'Lagos', email: 'chidi@example.com' },
-    { name: 'Amina Bello', state: 'Kano', email: 'amina@example.com' },
-    { name: 'Olumide Adebayo', state: 'Oyo', email: 'olumide@example.com' },
-    { name: 'Dr. Blessing Okoro', state: 'Rivers', email: 'blessing@example.com' },
-    { name: 'Platform Admin', state: 'Abuja', email: 'admin@naijaconnect.ng' }
-  ];
-
   return (
     <div className="max-w-7xl mx-auto px-2 sm:px-6 py-3 sm:py-6 h-[calc(100vh-4.5rem)]">
       <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200/80 shadow-xs h-full flex overflow-hidden">
@@ -653,47 +644,14 @@ export const ChatsView: React.FC<ChatsViewProps> = ({
                 </div>
               </div>
 
-              {/* Chat action controls & Persona Switcher */}
+              {/* Chat action controls */}
               <div className="flex items-center gap-2">
-                {/* Demo Switcher for Instant Two-Way Chat Testing */}
-                <div className="relative">
-                  <button
-                    onClick={() => setShowPersonaMenu(!showPersonaMenu)}
-                    className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-xs font-semibold transition cursor-pointer"
-                    title="Switch user to reply back"
-                  >
-                    <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                    <span className="text-[11px]">Chatting as: <strong>{currentUser?.fullName?.split(' ')[0]}</strong></span>
-                  </button>
-
-                  {showPersonaMenu && (
-                    <div className="absolute right-0 top-full mt-1.5 w-60 bg-white rounded-2xl shadow-xl border border-slate-100 p-2 z-50 animate-in fade-in zoom-in-95 duration-100">
-                      <div className="px-2 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                        Switch Identity to Reply:
-                      </div>
-                      {demoAccounts.map((acc) => (
-                        <button
-                          key={acc.email}
-                          onClick={() => {
-                            switchUser(acc.email);
-                            setShowPersonaMenu(false);
-                          }}
-                          className={`w-full flex items-center justify-between p-2 rounded-xl text-xs transition cursor-pointer ${
-                            currentUser?.email === acc.email
-                              ? 'bg-emerald-50 text-emerald-900 font-bold'
-                              : 'text-slate-700 hover:bg-slate-50'
-                          }`}
-                        >
-                          <div className="text-left">
-                            <p className="font-semibold">{acc.name}</p>
-                            <p className="text-[10px] text-slate-400">{acc.state}, Nigeria</p>
-                          </div>
-                          {currentUser?.email === acc.email && <Check className="w-3.5 h-3.5 text-emerald-600" />}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                {currentUser && (
+                  <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-semibold">
+                    <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+                    <span className="text-[11px]">Chatting as: <strong>{currentUser.fullName}</strong></span>
+                  </div>
+                )}
 
                 <button
                   onClick={() => loadActiveMessages(false)}
@@ -909,6 +867,22 @@ export const ChatsView: React.FC<ChatsViewProps> = ({
                       Send Note
                     </button>
                   </div>
+                </div>
+              ) : !currentUser ? (
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-2 p-3 bg-emerald-50 border border-emerald-200 rounded-2xl">
+                  <span className="text-xs text-emerald-950 font-medium text-center sm:text-left">
+                    Sign in or register an account to chat and message real Nigerians in real time.
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (onOpenAuth) onOpenAuth();
+                      else window.dispatchEvent(new CustomEvent('open_auth'));
+                    }}
+                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-xs transition shrink-0 cursor-pointer"
+                  >
+                    Sign In to Chat
+                  </button>
                 </div>
               ) : (
                 <form onSubmit={handleSendMessage} className="flex items-center gap-2">

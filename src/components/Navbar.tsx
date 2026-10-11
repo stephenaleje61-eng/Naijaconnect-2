@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenAuth,
   onSelectUser
 }) => {
-  const { currentUser, logout, switchUser, unreadNotificationsCount, decrementUnreadNotifs } = useAuth();
+  const { currentUser, logout, unreadNotificationsCount, decrementUnreadNotifs } = useAuth();
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<any[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -43,7 +43,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [showNotifDropdown, setShowNotifDropdown] = useState(false);
   const [showUserDropdown, setShowUserDropdown] = useState(false);
-  const [showSwitchDropdown, setShowSwitchDropdown] = useState(false);
 
   const searchRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
@@ -379,36 +378,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <UserIcon className="w-4 h-4 text-emerald-600" />
                     <span>My Profile</span>
                   </button>
-
-                  {/* Quick Account Switcher for Testing Real Multi-User Experience */}
-                  <div className="my-1 border-t border-slate-100 pt-1">
-                    <div className="px-2 py-1 text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-                      Switch Demo Account
-                    </div>
-                    {[
-                      { name: 'Chidiebere (Lagos)', email: 'chidi@example.com' },
-                      { name: 'Amina (Kano)', email: 'amina@example.com' },
-                      { name: 'Olumide (Oyo)', email: 'olumide@example.com' },
-                      { name: 'Blessing (Rivers)', email: 'blessing@example.com' },
-                      { name: 'Admin (Abuja)', email: 'admin@naijaconnect.ng' }
-                    ].map(acc => (
-                      <button
-                        key={acc.email}
-                        onClick={() => {
-                          switchUser(acc.email);
-                          setShowUserDropdown(false);
-                        }}
-                        className={`w-full flex items-center justify-between p-2 rounded-lg text-xs transition cursor-pointer ${
-                          currentUser.email === acc.email
-                            ? 'bg-emerald-50 text-emerald-800 font-bold'
-                            : 'text-slate-600 hover:bg-slate-50'
-                        }`}
-                      >
-                        <span>{acc.name}</span>
-                        {currentUser.email === acc.email && <Check className="w-3.5 h-3.5 text-emerald-600" />}
-                      </button>
-                    ))}
-                  </div>
 
                   <div className="pt-1 border-t border-slate-100">
                     <button

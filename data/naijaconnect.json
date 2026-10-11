@@ -9,7 +9,7 @@
       "dob": "1990-01-01",
       "state": "FCT - Abuja",
       "city": "Maitama, Abuja",
-      "bio": "Official Administrator of NaijaConnect. Welcome to Nigeria’s digital town square!",
+      "bio": "Official Administrator of NaijaConnect. Welcome to Nigeria’s digital town square! Connect, chat, and share across all 36 states and the FCT.",
       "avatarUrl": "/nigeria-flag-circle.svg",
       "coverUrl": "/nigeria-flag-banner.svg",
       "occupation": "Platform Administrator",
@@ -22,186 +22,8 @@
       "role": "admin",
       "isVerified": true,
       "isSuspended": false,
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "lastActiveAt": "2026-10-11T20:33:53.948Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_1",
-      "fullName": "Chidiebere Eze",
-      "username": "chidi_tech",
-      "email": "chidi@example.com",
-      "passwordHash": "$2b$10$Q1519hAd.MugFVdBtuNnaOJcJ37KRkgukqr4cwaR10mEoI1ASt4P.",
-      "dob": "1996-05-14",
-      "state": "Lagos",
-      "city": "Yaba, Lagos",
-      "bio": "Software Architect & Fintech Enthusiast in Lagos. Proud Igbo boy loving Afrobeats and pounded yam with egusi.",
-      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "Lead Engineer @ Fintech Hub",
-      "interests": [
-        "Coding",
-        "Fintech",
-        "Afrobeats",
-        "Arsenal FC"
-      ],
-      "role": "user",
-      "isVerified": true,
-      "isSuspended": false,
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "lastActiveAt": "2026-10-11T20:57:23.450Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_2",
-      "fullName": "Amina Bello",
-      "username": "amina_bello",
-      "email": "amina@example.com",
-      "passwordHash": "$2b$10$Q1519hAd.MugFVdBtuNnaOJcJ37KRkgukqr4cwaR10mEoI1ASt4P.",
-      "dob": "1998-09-22",
-      "state": "Kano",
-      "city": "Nassarawa, Kano",
-      "bio": "Fashion designer, textile lover & food blogger from Kano. Showcasing northern aesthetics & rich Arewa heritage.",
-      "avatarUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "Founder @ Arewa Stitches",
-      "interests": [
-        "Fashion",
-        "Textiles",
-        "Culture",
-        "Photography"
-      ],
-      "role": "user",
-      "isVerified": true,
-      "isSuspended": false,
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "lastActiveAt": "2026-10-11T20:57:05.381Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_3",
-      "fullName": "Olumide Adebayo",
-      "username": "olu_adebayo",
-      "email": "olumide@example.com",
-      "passwordHash": "$2b$10$Q1519hAd.MugFVdBtuNnaOJcJ37KRkgukqr4cwaR10mEoI1ASt4P.",
-      "dob": "1995-12-03",
-      "state": "Oyo",
-      "city": "Bodija, Ibadan",
-      "bio": "Agribusiness visionary & coffee lover. Building smart sustainable farm solutions in southwestern Nigeria.",
-      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "AgriTech Founder",
-      "interests": [
-        "Agriculture",
-        "Green Energy",
-        "Ibadan Vibes",
-        "Chelsea FC"
-      ],
-      "role": "user",
-      "isVerified": false,
-      "isSuspended": false,
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "lastActiveAt": "2026-10-11T16:33:53.948Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_4",
-      "fullName": "Dr. Blessing Okoro",
-      "username": "blessing_doc",
-      "email": "blessing@example.com",
-      "passwordHash": "$2b$10$Q1519hAd.MugFVdBtuNnaOJcJ37KRkgukqr4cwaR10mEoI1ASt4P.",
-      "dob": "1992-03-18",
-      "state": "Rivers",
-      "city": "Port Harcourt",
-      "bio": "Public health physician & wellness advocate in the Garden City. Bole and fish enthusiast.",
-      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "Consultant Epidemiologist",
-      "interests": [
-        "Health",
-        "Wellness",
-        "Bole & Fish",
-        "Books"
-      ],
-      "role": "user",
-      "isVerified": true,
-      "isSuspended": false,
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "lastActiveAt": "2026-10-11T20:33:53.948Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_1791750844461_by455",
-      "fullName": "Tariq Danjuma",
-      "username": "tariq_d",
-      "email": "tariq@example.ng",
-      "passwordHash": "$2b$10$YHUTWZZx6pP9ALbVOA0Lee5TydSNsb71bjm1dAZbXcmZe1gfy0Sh6",
-      "dob": "1997-08-11",
-      "state": "Kaduna",
-      "city": "Kaduna North",
-      "bio": "Proudly connecting from Kaduna, Nigeria! 🇳🇬",
-      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "Member @ NaijaConnect",
-      "interests": [
-        "Networking",
-        "Nigeria",
-        "Culture"
-      ],
-      "role": "user",
-      "isVerified": false,
-      "isSuspended": false,
-      "createdAt": "2026-10-11T20:34:04.461Z",
-      "lastActiveAt": "2026-10-11T20:34:04.461Z",
-      "privacy": {
-        "postsVisibility": "public",
-        "showOnlineStatus": true,
-        "showLastActive": true
-      }
-    },
-    {
-      "id": "usr_1791751949791_ho81g",
-      "fullName": "ALEJE STEPHEN AGBENYI",
-      "username": "donstephen",
-      "email": "sirrodstephen@gmail.com",
-      "passwordHash": "$2b$10$FZPG60kbgnCEjJsQEtcBXOIXzS10j/97Rr33qI92paSRYOPN3BmuC",
-      "dob": "2003-01-01",
-      "state": "Benue",
-      "city": "Oju",
-      "bio": "Proudly connecting from Benue, Nigeria! 🇳🇬",
-      "avatarUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=80",
-      "coverUrl": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1200&auto=format&fit=crop&q=80",
-      "occupation": "Member @ NaijaConnect",
-      "interests": [
-        "Networking",
-        "Nigeria",
-        "Culture"
-      ],
-      "role": "user",
-      "isVerified": false,
-      "isSuspended": false,
-      "createdAt": "2026-10-11T20:52:29.791Z",
-      "lastActiveAt": "2026-10-11T20:57:07.135Z",
+      "createdAt": "2026-10-11T12:00:00.000Z",
+      "lastActiveAt": "2026-10-11T14:00:00.000Z",
       "privacy": {
         "postsVisibility": "public",
         "showOnlineStatus": true,
@@ -209,425 +31,152 @@
       }
     }
   ],
-  "friendships": [
-    {
-      "id": "fr_1",
-      "requesterId": "usr_1",
-      "recipientId": "usr_2",
-      "status": "accepted",
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "updatedAt": "2026-10-10T14:33:53.948Z"
-    },
-    {
-      "id": "fr_2",
-      "requesterId": "usr_1",
-      "recipientId": "usr_4",
-      "status": "accepted",
-      "createdAt": "2026-10-10T14:33:53.948Z",
-      "updatedAt": "2026-10-10T14:33:53.948Z"
-    },
-    {
-      "id": "fr_3",
-      "requesterId": "usr_3",
-      "recipientId": "usr_1",
-      "status": "pending",
-      "createdAt": "2026-10-11T16:33:53.948Z",
-      "updatedAt": "2026-10-11T16:33:53.948Z"
-    }
-  ],
+  "friendships": [],
   "posts": [
     {
-      "id": "post_1",
-      "authorId": "usr_1",
-      "content": "Lagos traffic will humble you, but the hustle and energy here has no equal in the world! Just wrapped an awesome hackathon with 40 young developers in Yaba. The future of Nigerian tech is undeniably bright. 🇳🇬🚀",
+      "id": "post_welcome",
+      "authorId": "usr_admin",
+      "content": "Welcome to NaijaConnect — Nigeria’s premier digital town square! 🇳🇬 Connect with friends across all 36 states and the FCT, share your hustle, join communities, and chat in real time. We are proud of our heritage, culture, and innovation. Connect. Chat. Share. Belong!",
       "mediaUrls": [
         "/nigeria-flag.svg"
       ],
-      "feeling": "Feeling excited in Yaba, Lagos",
-      "locationState": "Lagos",
-      "likes": [
-        "usr_2",
-        "usr_3",
-        "usr_4"
-      ],
-      "reactions": {
-        "usr_2": "fire",
-        "usr_3": "like",
-        "usr_4": "clap"
-      },
-      "shares": [
-        "usr_3"
-      ],
-      "isEdited": false,
-      "createdAt": "2026-10-11T16:33:53.948Z",
-      "updatedAt": "2026-10-11T16:33:53.948Z"
-    },
-    {
-      "id": "post_2",
-      "authorId": "usr_2",
-      "content": "Kano traditional durbar patterns and dyed indigo cotton on display today at our workshop! Preserving centuries of northern craftsmanship while creating sustainable contemporary garments. What do you all think? 👘✨",
-      "mediaUrls": [
-        "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1000&auto=format&fit=crop&q=80"
-      ],
-      "feeling": "Feeling blessed in Kano",
-      "locationState": "Kano",
-      "likes": [
-        "usr_1",
-        "usr_4"
-      ],
-      "reactions": {
-        "usr_1": "love",
-        "usr_4": "fire"
-      },
-      "shares": [],
-      "isEdited": false,
-      "createdAt": "2026-10-11T12:33:53.948Z",
-      "updatedAt": "2026-10-11T12:33:53.948Z"
-    },
-    {
-      "id": "post_3",
-      "authorId": "usr_4",
-      "content": "Weekend reminder from Port Harcourt: prioritize your mental and physical wellness. Take that walk, drink plenty of water, and enjoy a warm plate of roasted plantain and grilled fish with good friends. Stay healthy, Naija! 🌿🩺",
-      "mediaUrls": [
-        "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1000&auto=format&fit=crop&q=80"
-      ],
-      "feeling": "Feeling energized in Port Harcourt",
-      "locationState": "Rivers",
-      "likes": [
-        "usr_1",
-        "usr_2",
-        "usr_3"
-      ],
-      "reactions": {
-        "usr_1": "like",
-        "usr_2": "love",
-        "usr_3": "clap"
-      },
-      "shares": [
-        "usr_1"
-      ],
-      "isEdited": false,
-      "createdAt": "2026-10-11T18:33:53.948Z",
-      "updatedAt": "2026-10-11T18:33:53.948Z"
+      "feeling": "Feeling patriotic in Abuja, FCT",
+      "stateTag": "FCT - Abuja",
+      "likes": [],
+      "sharesCount": 0,
+      "createdAt": "2026-10-11T12:00:00.000Z",
+      "updatedAt": "2026-10-11T12:00:00.000Z"
     }
   ],
-  "comments": [
-    {
-      "id": "cm_1",
-      "postId": "post_1",
-      "authorId": "usr_2",
-      "content": "Spot on Chidi! The ingenuity coming out of Yaba and across Nigeria is inspiring.",
-      "likes": [
-        "usr_1",
-        "usr_4"
-      ],
-      "createdAt": "2026-10-11T16:33:53.948Z"
-    },
-    {
-      "id": "cm_2",
-      "postId": "post_1",
-      "authorId": "usr_4",
-      "content": "Huge congratulations to the participants! Proud of our youth.",
-      "parentCommentId": "cm_1",
-      "likes": [
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T16:33:53.948Z"
-    }
-  ],
-  "stories": [
-    {
-      "id": "story_1",
-      "authorId": "usr_1",
-      "mediaUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80",
-      "text": "Late night sprint at the tech hub! 💡",
-      "backgroundGradient": "from-emerald-600 to-teal-800",
-      "createdAt": "2026-10-11T20:33:53.948Z",
-      "expiresAt": "2026-10-12T16:33:53.948Z",
-      "views": [
-        "usr_2",
-        "usr_4"
-      ],
-      "reactions": {
-        "usr_2": "🔥"
-      }
-    },
-    {
-      "id": "story_2",
-      "authorId": "usr_2",
-      "mediaUrl": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop&q=80",
-      "text": "New fabric drop coming tomorrow! ✨",
-      "backgroundGradient": "from-amber-600 to-rose-700",
-      "createdAt": "2026-10-11T20:33:53.948Z",
-      "expiresAt": "2026-10-12T16:33:53.948Z",
-      "views": [
-        "usr_1"
-      ],
-      "reactions": {
-        "usr_1": "❤️"
-      }
-    },
-    {
-      "id": "story_3",
-      "authorId": "usr_4",
-      "mediaUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop&q=80",
-      "text": "Morning serenity in Rivers State 🌊",
-      "backgroundGradient": "from-emerald-700 to-cyan-800",
-      "createdAt": "2026-10-11T20:33:53.948Z",
-      "expiresAt": "2026-10-12T16:33:53.948Z",
-      "views": [
-        "usr_3"
-      ],
-      "reactions": {}
-    }
-  ],
+  "comments": [],
+  "stories": [],
   "conversations": [
     {
       "id": "conv_public_lounge",
       "type": "group",
-      "name": "🇳🇬 Naija National Town Square (Open Chat)",
+      "name": "Naija National Town Square 🇳🇬",
+      "memberIds": [
+        "usr_admin"
+      ],
+      "adminIds": [
+        "usr_admin"
+      ],
       "avatarUrl": "/nigeria-flag-circle.svg",
-      "creatorId": "usr_admin",
-      "memberIds": [
-        "usr_1",
-        "usr_admin",
-        "usr_1",
-        "usr_2",
-        "usr_3",
-        "usr_4",
-        "usr_1791750844461_by455",
-        "usr_1791751949791_ho81g"
-      ],
-      "updatedAt": "2026-10-11T20:57:05.405Z",
-      "lastMessage": {
-        "text": "Hello my brothers and sisters across Nigeria! Naija to the world 🇳🇬✨",
-        "senderId": "usr_2",
-        "createdAt": "2026-10-11T20:57:05.405Z"
-      }
-    },
-    {
-      "id": "conv_1",
-      "type": "direct",
-      "memberIds": [
-        "usr_1",
-        "usr_2"
-      ],
-      "updatedAt": "2026-10-11T16:33:53.948Z",
-      "lastMessage": {
-        "text": "Amina, loved your latest designs! Looking forward to collaborating.",
-        "senderId": "usr_1",
-        "createdAt": "2026-10-11T16:33:53.948Z"
-      }
-    },
-    {
-      "id": "conv_grp_1",
-      "type": "group",
-      "name": "Naija Tech Hub Hangout",
-      "avatarUrl": "/nigeria-flag-circle.svg",
-      "creatorId": "usr_1",
-      "memberIds": [
-        "usr_1",
-        "usr_2",
-        "usr_3",
-        "usr_4"
-      ],
-      "updatedAt": "2026-10-11T20:33:53.948Z",
-      "lastMessage": {
-        "text": "Welcome everyone to the official NaijaConnect community chat!",
-        "senderId": "usr_1",
-        "createdAt": "2026-10-11T20:33:53.948Z"
-      }
+      "createdAt": "2026-10-11T12:00:00.000Z",
+      "updatedAt": "2026-10-11T12:00:00.000Z"
     }
   ],
   "messages": [
     {
-      "id": "msg_1",
-      "conversationId": "conv_1",
-      "senderId": "usr_2",
-      "text": "Hey Chidi! How is Lagos today?",
-      "readBy": [
-        "usr_1",
-        "usr_2"
-      ],
-      "createdAt": "2026-10-11T14:33:53.948Z"
-    },
-    {
-      "id": "msg_2",
-      "conversationId": "conv_1",
-      "senderId": "usr_1",
-      "text": "Amina, loved your latest designs! Looking forward to collaborating.",
-      "readBy": [
-        "usr_1",
-        "usr_2"
-      ],
-      "createdAt": "2026-10-11T16:33:53.948Z"
-    },
-    {
-      "id": "msg_grp_1",
-      "conversationId": "conv_grp_1",
-      "senderId": "usr_1",
-      "text": "Welcome everyone to the official NaijaConnect community chat!",
-      "readBy": [
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T20:33:53.948Z"
-    },
-    {
-      "id": "msg_lounge_1",
+      "id": "msg_welcome",
       "conversationId": "conv_public_lounge",
       "senderId": "usr_admin",
-      "text": "Welcome to NaijaConnect National Town Square! 🇳🇬 Connect with friends from Lagos to Maiduguri, Kano to Port Harcourt. Drop your greeting, location, or hustle here!",
-      "readBy": [
-        "usr_admin",
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T16:56:55.473Z"
-    },
-    {
-      "id": "msg_lounge_2",
-      "conversationId": "conv_public_lounge",
-      "senderId": "usr_1",
-      "text": "Great to see everyone here! Greetings from Yaba, Lagos. 🚀 Any fellow devs or creators online right now?",
-      "readBy": [
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T18:56:55.473Z"
-    },
-    {
-      "id": "msg_lounge_3",
-      "conversationId": "conv_public_lounge",
-      "senderId": "usr_2",
-      "text": "Sannu da zuwa from Kano! 👘 Proudly showcasing Northern fashion & arts. Loving the real-time vibe here!",
-      "readBy": [
-        "usr_2",
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T19:56:55.473Z"
-    },
-    {
-      "id": "msg_lounge_4",
-      "conversationId": "conv_public_lounge",
-      "senderId": "usr_4",
-      "text": "Hello from the Garden City, Port Harcourt! 🌿 Bole and fish vibes today. Wishing everyone a blessed week!",
-      "readBy": [
-        "usr_4",
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T20:26:55.473Z"
-    },
-    {
-      "id": "msg_1791752225405_vd33",
-      "conversationId": "conv_public_lounge",
-      "senderId": "usr_2",
-      "text": "Hello my brothers and sisters across Nigeria! Naija to the world 🇳🇬✨",
-      "readBy": [
-        "usr_2",
-        "usr_1"
-      ],
-      "createdAt": "2026-10-11T20:57:05.405Z"
-    }
-  ],
-  "notifications": [
-    {
-      "id": "notif_1",
-      "userId": "usr_1",
-      "senderId": "usr_3",
-      "type": "friend_request",
-      "title": "New Friend Request",
-      "body": "Olumide Adebayo sent you a friend request.",
-      "link": "/friends",
-      "isRead": false,
-      "createdAt": "2026-10-11T16:33:53.948Z"
-    },
-    {
-      "id": "notif_2",
-      "userId": "usr_1",
-      "senderId": "usr_2",
-      "type": "post_like",
-      "title": "Post Liked",
-      "body": "Amina Bello reacted to your post about Yaba tech hackathon.",
-      "link": "/feed",
+      "text": "Welcome to NaijaConnect Town Square! 🇳🇬 Introduce yourself and let everyone know which state you are connecting from.",
       "isRead": true,
-      "createdAt": "2026-10-11T16:33:53.948Z"
-    },
-    {
-      "id": "notif_1791750844461",
-      "userId": "usr_1791750844461_by455",
-      "senderId": "usr_admin",
-      "type": "system",
-      "title": "Welcome to NaijaConnect!",
-      "body": "Welcome to Nigeria’s premier social network! Update your profile and say hello to friends across all 36 states.",
-      "link": "/feed",
-      "isRead": false,
-      "createdAt": "2026-10-11T20:34:04.461Z"
-    },
-    {
-      "id": "notif_1791751949791",
-      "userId": "usr_1791751949791_ho81g",
-      "senderId": "usr_admin",
-      "type": "system",
-      "title": "Welcome to NaijaConnect!",
-      "body": "Welcome to Nigeria’s premier social network! Update your profile and say hello to friends across all 36 states.",
-      "link": "/feed",
-      "isRead": false,
-      "createdAt": "2026-10-11T20:52:29.791Z"
+      "createdAt": "2026-10-11T12:00:00.000Z"
     }
   ],
+  "notifications": [],
   "reports": [],
   "groups": [
     {
-      "id": "grp_1",
-      "name": "Naija Tech Founders & Devs",
-      "description": "The premier community for Nigerian software engineers, startup builders, and tech innovators.",
-      "avatarUrl": "/nigeria-flag-circle.svg",
-      "stateLocation": "Lagos",
-      "category": "Tech",
-      "creatorId": "usr_1",
+      "id": "grp_tech",
+      "name": "Tech & Developers Nigeria",
+      "description": "Network for Nigerian software engineers, product designers, data experts, founders, and tech enthusiasts.",
+      "category": "Tech & Innovation",
+      "avatarUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
       "memberIds": [
-        "usr_1",
-        "usr_2",
-        "usr_3",
-        "usr_4"
+        "usr_admin"
       ],
-      "createdAt": "2026-10-10T14:33:53.948Z"
+      "state": "All Nigeria",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
     },
     {
-      "id": "grp_2",
-      "name": "Arewa Creatives & Fashion Guild",
-      "description": "Celebrating arts, modern textiles, and cultural craftsmanship from Northern Nigeria.",
-      "avatarUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400&auto=format&fit=crop&q=80",
-      "stateLocation": "Kano",
-      "category": "Culture",
-      "creatorId": "usr_2",
+      "id": "grp_food",
+      "name": "Naija Foodies & Jollof Hub",
+      "description": "Celebrating Nigerian cuisine from smoky party Jollof to Afang soup, Amala with Gbegiri, Suya, and Kilishi.",
+      "category": "Food & Lifestyle",
+      "avatarUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
       "memberIds": [
-        "usr_2",
-        "usr_1",
-        "usr_4"
+        "usr_admin"
       ],
-      "createdAt": "2026-10-10T14:33:53.948Z"
+      "state": "All Nigeria",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
     },
     {
-      "id": "grp_3",
-      "name": "Nigerian AgriTech Innovations",
-      "description": "Modern mechanized agriculture, farm exports, and food security network across Nigeria.",
-      "avatarUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&auto=format&fit=crop&q=80",
-      "stateLocation": "Oyo",
-      "category": "Business",
-      "creatorId": "usr_3",
+      "id": "grp_lagos",
+      "name": "Lagos Connect & Hustle",
+      "description": "Networking and business collaboration for residents, creators, and entrepreneurs in Lagos State.",
+      "category": "Business & Networking",
+      "avatarUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
       "memberIds": [
-        "usr_3",
-        "usr_1"
+        "usr_admin"
       ],
-      "createdAt": "2026-10-10T14:33:53.948Z"
+      "state": "Lagos",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
+    },
+    {
+      "id": "grp_abuja",
+      "name": "Abuja & FCT Network",
+      "description": "Connecting professionals, creatives, and residents across the Federal Capital Territory and northern regions.",
+      "category": "Community & Culture",
+      "avatarUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
+      "memberIds": [
+        "usr_admin"
+      ],
+      "state": "FCT - Abuja",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
+    },
+    {
+      "id": "grp_music",
+      "name": "Naija Music, Comedy & Afrobeats",
+      "description": "Discussing the freshest Afrobeats bangers, skits, Nollywood releases, and entertainment updates.",
+      "category": "Entertainment",
+      "avatarUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
+      "memberIds": [
+        "usr_admin"
+      ],
+      "state": "All Nigeria",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
+    },
+    {
+      "id": "grp_sports",
+      "name": "Super Eagles & Naija Sports",
+      "description": "Passionate football banter, Premier League analysis, and unwavering support for Nigeria’s national teams.",
+      "category": "Sports",
+      "avatarUrl": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&auto=format&fit=crop&q=80",
+      "coverUrl": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&auto=format&fit=crop&q=80",
+      "creatorId": "usr_admin",
+      "memberIds": [
+        "usr_admin"
+      ],
+      "state": "All Nigeria",
+      "isPrivate": false,
+      "createdAt": "2026-10-11T12:00:00.000Z"
     }
   ],
   "announcements": [
     {
-      "id": "ann_1",
-      "title": "Welcome to NaijaConnect!",
-      "message": "Experience the real warmth, hustle, and brotherhood of Nigeria. Connect, chat, share and belong.",
+      "id": "ann_welcome",
+      "title": "Welcome to NaijaConnect",
+      "message": "Connect. Chat. Share. Belong. Welcome to Nigeria’s premier social network across all 36 states and the FCT.",
       "active": true,
-      "createdAt": "2026-10-11T20:33:53.948Z"
+      "createdAt": "2026-10-11T12:00:00.000Z"
     }
   ]
 }

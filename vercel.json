@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "/api"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

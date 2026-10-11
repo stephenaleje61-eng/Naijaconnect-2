@@ -45,19 +45,46 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
     }
 
     if (!response.ok) {
-      const errorMessage =
-        data && typeof data === 'object' && data.error
-          ? data.error
-          : `Server returned error (${response.status})`;
+      let errorMessage = 'An unexpected error occurred. Please try again.';
+      if (data && typeof data === 'object') {
+        if (typeof data.error === 'string') errorMessage = data.error;
+        else if (typeof data.message === 'string') errorMessage = data.message;
+      } else if (typeof data === 'string' && data.trim()) {
+        errorMessage = data.trim();
+      }
+
+      if (response.status === 404) {
+        errorMessage = 'Service endpoint not found (404). Please check backend connection.';
+      } else if (response.status === 401 && !data?.error) {
+        errorMessage = 'Invalid credentials or session expired. Please sign in again.';
+      } else if (response.status === 403 && !data?.error) {
+        errorMessage = 'Access denied. You do not have permission for this request.';
+      } else if (response.status >= 500 && !data?.error) {
+        errorMessage = 'Server is currently unavailable. Please try again in a moment.';
+      }
+
+      if (
+        typeof errorMessage === 'string' &&
+        (errorMessage.includes('<html') ||
+          errorMessage.includes('<!DOCTYPE') ||
+          errorMessage.includes('<!doctype') ||
+          errorMessage.includes('NOT_FOUND'))
+      ) {
+        errorMessage = `Service endpoint unavailable (${response.status}). Please try again.`;
+      }
+
       throw new Error(errorMessage);
     }
 
     return data as T;
   } catch (error: any) {
     if (error instanceof Error) {
+      if (error.message.includes('[object Object]')) {
+        throw new Error('An unexpected response was received. Please try again.');
+      }
       throw error;
     }
-    throw new Error('Network error. Please check your connection and try again.');
+    throw new Error('Network connection error. Please verify your internet connection.');
   }
 }
 

@@ -7,11 +7,18 @@ import { api } from '../services/api.ts';
 interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
+  initialMode?: 'login' | 'register' | 'recover';
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
-  const { login, register, switchUser } = useAuth();
-  const [mode, setMode] = useState<'login' | 'register' | 'recover'>('login');
+export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialMode = 'login' }) => {
+  const { login, register } = useAuth();
+  const [mode, setMode] = useState<'login' | 'register' | 'recover'>(initialMode);
+
+  React.useEffect(() => {
+    if (isOpen && initialMode) {
+      setMode(initialMode);
+    }
+  }, [isOpen, initialMode]);
 
   // Form fields
   const [identifier, setIdentifier] = useState('');
@@ -213,41 +220,20 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
               {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <span>Sign In</span>}
             </button>
 
-            {/* Quick Demo Switcher */}
-            <div className="pt-2 border-t border-slate-100">
-              <span className="text-[11px] font-bold text-slate-400 block text-center mb-2">
-                TEST WITH PRE-CONFIGURED ACCOUNTS:
-              </span>
-              <div className="grid grid-cols-2 gap-1.5 text-xs">
+            <div className="pt-2 text-center">
+              <p className="text-xs text-slate-500">
+                Don't have an account yet?{' '}
                 <button
                   type="button"
-                  onClick={() => switchUser('chidi@example.com').then(onClose)}
-                  className="p-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-[11px] font-semibold transition text-left cursor-pointer"
+                  onClick={() => {
+                    setMode('register');
+                    setError(null);
+                  }}
+                  className="font-bold text-emerald-600 hover:text-emerald-700 hover:underline cursor-pointer"
                 >
-                  Chidi (Lagos)
+                  Register here
                 </button>
-                <button
-                  type="button"
-                  onClick={() => switchUser('amina@example.com').then(onClose)}
-                  className="p-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-[11px] font-semibold transition text-left cursor-pointer"
-                >
-                  Amina (Kano)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => switchUser('olumide@example.com').then(onClose)}
-                  className="p-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 text-[11px] font-semibold transition text-left cursor-pointer"
-                >
-                  Olumide (Oyo)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => switchUser('admin@naijaconnect.ng').then(onClose)}
-                  className="p-2 rounded-xl bg-red-50 hover:bg-red-100 text-red-800 text-[11px] font-semibold transition text-left cursor-pointer"
-                >
-                  Admin Console
-                </button>
-              </div>
+              </p>
             </div>
           </form>
         )}
