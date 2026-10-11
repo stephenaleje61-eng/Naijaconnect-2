@@ -1,0 +1,11 @@
+{
+  "name": "NaijaConnect",
+  "description": "Connect. Chat. Share. Belong. The premier Nigerian social networking platform combining feed, stories, and real-time chat.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
